@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Add-in Excel: Dashboard Top Country & Currency (International Payment) - VERSI SEDERHANA tanpa tombol ribbon.
+  Setelah di-upload, dashboard langsung terbuka di panel kanan. Buka lagi lewat Home > Add-ins (atau Insert > My Add-ins).
+  Hosting: https://khairunidakhumaira.github.io/DashboardTransaksi2026/
+-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+  <Id>3b0f5f8e-2c1d-4a6e-9f47-8d5c7a1e6b20</Id>
+  <Version>1.0.0.1</Version>
+  <ProviderName>International Payment Department</ProviderName>
+  <DefaultLocale>id-ID</DefaultLocale>
+  <DisplayName DefaultValue="Top Country &amp; Currency"/>
+  <Description DefaultValue="Dashboard transaksi International Payment (incoming &amp; outgoing): top negara, top currency, frekuensi dan amount per periode."/>
+  <IconUrl DefaultValue="https://khairunidakhumaira.github.io/DashboardTransaksi2026/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://khairunidakhumaira.github.io/DashboardTransaksi2026/icon-64.png"/>
+  <SupportUrl DefaultValue="https://khairunidakhumaira.github.io/DashboardTransaksi2026/index.html"/>
+  <AppDomains>
+    <AppDomain>https://khairunidakhumaira.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Workbook"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="ExcelApi" MinVersion="1.7"/>
+    </Sets>
+  </Requirements>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://khairunidakhumaira.github.io/DashboardTransaksi2026/index.html"/>
+  </DefaultSettings>
+  <Permissions>ReadDocument</Permissions>
+</OfficeApp>
